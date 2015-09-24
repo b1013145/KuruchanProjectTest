@@ -21,7 +21,7 @@
                         $enlat = (DOUBLE)$data3;
                         $enlng = (DOUBLE)$data4;
 
-                        $select = mysql_query('SELECT st_lat, st_lng, en_lat, en_lng, no_dump, low_dump, high_dump');
+                        $select = mysql_query('SELECT st_lat, st_lng, en_lat, en_lng, no_dump, low_dump, high_dump FROM ProRSC');
                         if (!$select) {
                                 die('クエリーが失敗しました。'.mysql_error());
                         }
